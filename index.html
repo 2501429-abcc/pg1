@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食事管理アプリ</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="script.js" defer></script> </head>
+<body>
+    <h1>食事管理アプリ</h1>
+
+    <div class="input-area">
+        <label>日付</label>
+        <input type="date" id="meal-date">
+        <label>食べたメニュー</label>
+        <input type="text" id="meal-menu" placeholder="例：カレーライス">
+        <label>時間帯</label>
+        <select id="meal-time">
+            <option value="朝食">朝食</option>
+            <option value="昼食" selected>昼食</option>
+            <option value="夕食">夕食</option>
+            <option value="間食">間食</option>
+        </select>
+        <label>一言メモ</label>
+        <input type="text" id="meal-memo" placeholder="例：少し辛かった">
+        <button id="add-btn">記録する</button> </div>
+
+    <div class="filter-area">
+        <p id="total-count">合計記録数: 0件</p> <label>日付で絞り込む：</label>
+        <input type="date" id="filter-date">
+        <button id="show-all-btn">すべて表示</button>
+        <button id="clear-all-btn">全データ消去</button>
+    </div>
+
+    <div id="meal-list"></div>
+    <small>&copy;2501429 吉松莉玖</small>
+</body>
+</html>
